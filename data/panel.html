@@ -1,0 +1,21 @@
+<!doctype html>
+<html ng-app>
+  <head>
+    <link rel="stylesheet" href="panel.css" />
+  </head>
+  <body ng-controller="TokenControl">
+    <h3>{{ title }}</h3>
+    <dl>
+      <dt>Refresh Token</dt>
+      <dd>{{ token.refresh_token }}</dd>
+      <dt>Access Token</dt>
+      <dd>{{ token.access_token }}</dd>
+      <dt>Expires At</dt>
+      <dd>{{ token.expires_at | date:'yyyy-MM-dd HH:mm:ss' }}</dd>
+    </dl>
+    <button ng-click="authenticate()">Authenticate</button>
+    <button ng-click="refresh()">Refresh</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script type="text/javascript" src="panel.js"></script>
+  </body>
+</html>
