@@ -3,9 +3,11 @@
 
 addon.port.on('token', function(token) {
   var scope = angular.element(document.body).scope();
-  scope.$apply(function(){
-    scope.token = token;
-  });
+  if (scope !== undefined) {
+    scope.$apply(function(){
+      scope.token = token;
+    });
+  }
 });
 
 
