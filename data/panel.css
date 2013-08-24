@@ -1,3 +1,6 @@
 dt {
   font-weight: bold;
 }
+.expired {
+  color: red;
+}
