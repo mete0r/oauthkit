@@ -1,25 +1,9 @@
 {
-  "name": "oauthkit",
-  "fullName": "oauthkit",
+  "name": "oauthman",
+  "fullName": "oauthman",
   "id": "jid1-ah9w2Atm9kAwRA",
-  "description": "a basic add-on",
-  "author": "",
+  "description": "",
+  "author": "mete0r <mete0r@sarangbang.or.kr>",
   "license": "GPL v3",
   "version": "0.1",
-  "preferences": [{
-    "name": "google_client_id",
-    "title": "Google Client ID",
-    "type": "string",
-    "value": ""
-  }, {
-    "name": "google_client_secret",
-    "title": "Google Client Secret",
-    "type": "string",
-    "value": ""
-  }, {
-    "name": "google_client_redirect_uri",
-    "title": "Google Client Redirect URI",
-    "type": "string",
-    "value": ""
-  }]
 }
