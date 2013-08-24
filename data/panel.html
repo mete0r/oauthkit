@@ -9,8 +9,8 @@
     <button ng-disabled="token == null">Revoke</button>
     <button ng-click="refresh()" ng-show="token.refresh_token">Refresh</button>
     <dl ng-show="token">
-      <dt ng-show="token.refresh">Refresh Token</dt>
-      <dd ng-show="token.refresh">{{ token.refresh_token }}</dd>
+      <dt ng-show="token.refresh_token">Refresh Token</dt>
+      <dd ng-show="token.refresh_token">{{ token.refresh_token }}</dd>
       <dt>Access Token</dt>
       <dd>{{ token.access_token }}</dd>
       <dt>Expires At</dt>
